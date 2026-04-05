@@ -1,0 +1,16 @@
+[Unit]
+Description=MySQL Router Exporter
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=mysqlrouter
+Group=mysqlrouter
+ExecStart=/usr/local/bin/mysqlrouter_exporter --config /etc/mysqlrouter_exporter/config.yml
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target
+

@@ -1,0 +1,12 @@
+build/
+dist/
+coverage.out
+config.yml
+router_api_password
+.env
+.env.*
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
