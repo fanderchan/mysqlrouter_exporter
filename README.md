@@ -130,18 +130,6 @@ git tag v0.1.0
 git push origin v0.1.0
 ```
 
-## [`dbbot`](https://github.com/fanderchan/dbbot) Compatibility
-
-[`dbbot`](https://github.com/fanderchan/dbbot) can continue to deploy `mysqlrouter_exporter` as before.
-
-The intended compatibility path is:
-
-- build this standalone project under `/usr/local/mysqlrouter_exporter`
-- let [`dbbot`](https://github.com/fanderchan/dbbot) prefer the standalone artifact when present
-- keep [`dbbot`](https://github.com/fanderchan/dbbot)'s bundled binary as a fallback
-
-That means [`dbbot`](https://github.com/fanderchan/dbbot) integration remains usable even if this standalone project is not built yet.
-
 ## License
 
 Apache-2.0

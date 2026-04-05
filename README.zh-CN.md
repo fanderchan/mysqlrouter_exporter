@@ -130,18 +130,6 @@ git tag v0.1.0
 git push origin v0.1.0
 ```
 
-## [`dbbot`](https://github.com/fanderchan/dbbot) 兼容性
-
-[`dbbot`](https://github.com/fanderchan/dbbot) 仍然可以像以前一样部署 `mysqlrouter_exporter`。
-
-建议的兼容路径是：
-
-- 在 `/usr/local/mysqlrouter_exporter` 下构建这个独立项目
-- 如果独立构建产物存在，就让 [`dbbot`](https://github.com/fanderchan/dbbot) 优先使用它
-- 保留 [`dbbot`](https://github.com/fanderchan/dbbot) 自带二进制作为兜底
-
-也就是说，即使这个独立项目尚未构建完成，[`dbbot`](https://github.com/fanderchan/dbbot) 集成仍然可用。
-
 ## License
 
 Apache-2.0
