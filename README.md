@@ -2,7 +2,7 @@
 
 A productized Prometheus exporter for MySQL Router.
 
-This project is intended to be usable outside `dbbot`, while remaining compatible with `dbbot`'s existing YAML config format and service launch style.
+This project is intended to be usable outside [`dbbot`](https://github.com/fanderchan/dbbot), while remaining compatible with [`dbbot`](https://github.com/fanderchan/dbbot)'s existing YAML config format and service launch style.
 
 Chinese README: [README.zh-CN.md](README.zh-CN.md)
 
@@ -130,17 +130,17 @@ git tag v0.1.0
 git push origin v0.1.0
 ```
 
-## dbbot Compatibility
+## [`dbbot`](https://github.com/fanderchan/dbbot) Compatibility
 
-`dbbot` can continue to deploy `mysqlrouter_exporter` as before.
+[`dbbot`](https://github.com/fanderchan/dbbot) can continue to deploy `mysqlrouter_exporter` as before.
 
 The intended compatibility path is:
 
 - build this standalone project under `/usr/local/mysqlrouter_exporter`
-- let `dbbot` prefer the standalone artifact when present
-- keep `dbbot`'s bundled binary as a fallback
+- let [`dbbot`](https://github.com/fanderchan/dbbot) prefer the standalone artifact when present
+- keep [`dbbot`](https://github.com/fanderchan/dbbot)'s bundled binary as a fallback
 
-That means `dbbot` integration remains usable even if this standalone project is not built yet.
+That means [`dbbot`](https://github.com/fanderchan/dbbot) integration remains usable even if this standalone project is not built yet.
 
 ## License
 
