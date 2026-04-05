@@ -4,6 +4,8 @@ A productized Prometheus exporter for MySQL Router.
 
 This project is intended to be usable outside `dbbot`, while remaining compatible with `dbbot`'s existing YAML config format and service launch style.
 
+Chinese README: [README.zh-CN.md](README.zh-CN.md)
+
 ## What It Collects
 
 - Router availability and scrape health
@@ -21,7 +23,7 @@ The listener checks are the main differentiator of this implementation: they ver
 
 ```bash
 cd /usr/local/mysqlrouter_exporter
-sh ./build.sh
+bash ./build.sh
 ```
 
 Artifacts:
@@ -33,7 +35,7 @@ Artifacts:
 
 ```bash
 cd /usr/local/mysqlrouter_exporter
-sh ./scripts/install.sh
+bash ./scripts/install.sh
 ```
 
 Then edit `/etc/mysqlrouter_exporter/config.yml` and start:

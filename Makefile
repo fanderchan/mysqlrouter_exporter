@@ -6,15 +6,14 @@ test:
 	go test ./...
 
 build:
-	sh ./build.sh
+	bash ./build.sh
 
 release-artifacts:
-	GOOS=linux GOARCH=amd64 sh ./build.sh
-	GOOS=linux GOARCH=arm64 sh ./build.sh
+	GOOS=linux GOARCH=amd64 bash ./build.sh
+	GOOS=linux GOARCH=arm64 bash ./build.sh
 
 clean:
 	rm -rf build dist coverage.out
 
 docker-build:
 	docker build -t mysqlrouter_exporter:local .
-

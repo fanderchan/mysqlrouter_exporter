@@ -5,7 +5,7 @@ script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "${script_dir}"
 
 if [[ ! -x build/mysqlrouter_exporter ]]; then
-  sh ./build.sh
+  bash ./build.sh
 fi
 
 install -d /etc/mysqlrouter_exporter
@@ -21,4 +21,3 @@ install -m 0644 contrib/systemd/mysqlrouter_exporter.service /etc/systemd/system
 
 echo "installed /usr/local/bin/mysqlrouter_exporter"
 echo "review /etc/mysqlrouter_exporter/config.yml before starting the service"
-
